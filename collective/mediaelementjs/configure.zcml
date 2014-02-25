@@ -10,7 +10,8 @@
     <include package=".browser" />
     <include zcml:condition="installed plone.dexterity" file="dexterity.zcml"/>
 
-    <five:registerPackage package="." initialize=".initialize" />    
+    <five:registerPackage package="." initialize=".initialize" />
+    <i18n:registerTranslations directory="locales" />
 
     <adapter factory=".media.VideoInfoAdapter" />
     <adapter factory=".media.AudioInfoAdapter" />
